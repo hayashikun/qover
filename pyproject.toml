@@ -7,8 +7,10 @@ license = "Apache License 2.0"
 
 [tool.poetry.dependencies]
 python = "^3.8"
+numpy = "^1.18"
 grpcio = "^1.32"
-grpcio-tools = "^1.32"
+grpcio-tools= "^1.32"
+fire = "^0.3"
 
 [build-system]
 requires = ["poetry>=0.12"]
