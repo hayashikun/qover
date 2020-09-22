@@ -20,9 +20,9 @@ class Server:
         hello_pb2_grpc.add_GreeterServicer_to_server(hello_service, self.server)
         hand_tracking_pb2_grpc.add_HandTrackingServicer_to_server(hand_tracking_service, self.server)
         face_mesh_pb2_grpc.add_FaceMeshServicer_to_server(face_mesh_service, self.server)
-        self.server.add_insecure_port(f'localhost:{port}')
+        self.server.add_insecure_port(f'0.0.0.0:{port}')
         self.server.start()
-        print(f"Server running http://localhost:{port}")
+        print(f"Server running http://0.0.0.0:{port}")
         self.server.wait_for_termination()
 
 
