@@ -3,7 +3,7 @@ services:
   envoy:
     build: ./envoy
     ports:
-      - "50051:50051"
+      - "3000:3000"
     links:
       - "server"
   server:
