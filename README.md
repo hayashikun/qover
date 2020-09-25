@@ -2,7 +2,7 @@
 
 The `qover` is the gRPC server that transfers the data sent through PushStream as PullStream.
 
-<img src="doc/qover.png" alt="qover" style="width: 200px" />
+<img src="doc/qover.png" alt="qover" width="200px" />
 
 ## Run
 
