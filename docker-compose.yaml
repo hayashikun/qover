@@ -10,4 +10,4 @@ services:
     build: .
     ports:
       - "9090:9090"
-    container_name: "server"
+    command: "poetry run python app.py --port=9090 --worker=50"
